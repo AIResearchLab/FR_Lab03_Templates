@@ -34,7 +34,7 @@ srv1 = ros.ServiceServer(node_3,'/add', 'roscpp_tutorials/TwoInts');
 srv2 = ros.ServiceServer(node_3,'/reply', 'std_srvs/Empty', @exampleHelperROSEmptyCallback);
 
 % Load sample data for inspecting messages
-tffile = fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'tfdata.mat');
+tffile = fullfile(fileparts(mfilename('fullpath')), 'data', 'tfdata.mat');
 tfcell = load(tffile);
 tf = tfcell.t;
 clear tffile

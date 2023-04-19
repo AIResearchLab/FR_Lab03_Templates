@@ -5,7 +5,7 @@ function scanPubmsg = exampleHelperROSLoadRanges()
     
     %   Copyright 2014-2015 The MathWorks, Inc.
     
-    laserfile = fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'laserdata.mat');
+    laserfile = fullfile(fileparts(mfilename('fullpath')), 'data', 'laserdata.mat');
     lasercell = load(laserfile);
     scanPubmsg = lasercell.laserdata;
 end
